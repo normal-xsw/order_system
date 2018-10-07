@@ -1,0 +1,175 @@
+@charset "utf-8";
+body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, dt, dd, a, img, button, form, table, th, tr, td, tbody, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;           /*根元素是10px；浏览器默认字体大小16px， 最小字体大小12px，但是移动端没有限制*/
+}
+
+body{
+    font: 12px/1.5  'Microsoft YaHei','宋体', Tahoma, Arial, sans-serif;
+    color: #555;
+    background-color: #f7f7f7;
+}
+em, i{
+    font-style: normal;
+}
+ul, li{
+    list-style-type: none;
+}
+strong{
+    font-weight: normal;
+}
+.clearfix:after{
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both; 
+}
+a{
+    text-decoration: none;
+}
+
+/*脚部导航*/
+.foot_nav{
+    position: fixed;
+    left: 0.5rem;
+    bottom: 0.5rem;
+    width: 4.4rem;
+    height: 4.4rem;
+    background-color: #000;
+    border-radius: 50%;
+    text-align: center;
+
+    img{
+        width: 1.8rem;
+        height: 1.8rem;
+        margin-top:0.5rem;
+    }
+
+    p{
+        margin-top: -0.3rem;
+        color: #fff;
+    }
+}
+
+/*脚部购物车*/
+.foot_cart{
+    position: fixed;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    width: 4.4rem;
+    height: 4.4rem;
+    background-color: red;
+    border-radius: 50%;
+    text-align: center;
+
+    img{
+        width: 1.8rem;
+        height: 1.8rem;
+        margin-top:0.5rem;
+    }
+
+    p{
+        margin-top: -0.3rem;
+        color: #fff;
+    }
+
+     /*购物车数量*/
+    .cart_num{
+      position: absolute;
+      right: 1rem;
+      top: -3rem;
+      width: 2rem;
+      height: 2rem;
+      line-height: 2rem;
+      border-radius: 50%;
+      background-color: red;
+      color: #fff;
+      text-align: center;
+    }
+}
+
+/*脚部菜单*/
+.foot_menu{
+    position: fixed;
+    left: 50%;
+    bottom: 0.5rem;
+    width: 4.4rem;
+    height: 4.4rem;
+    margin-left: -2.2rem;
+    background-color: #000;
+    border-radius: 50%;
+    text-align: center;
+
+    img{
+        width: 1.8rem;
+        height: 1.8rem;
+        margin-top:0.5rem;
+    }
+
+    p{
+        margin-top: -0.3rem;
+        color: #fff;
+    }
+}
+
+/*弹出导航*/
+  .foot_nav_show{
+      position: fixed;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background: rgba(0, 0, 0, 0.6);
+
+      .list{
+          li{
+              position: absolute;
+              width: 4.4rem;
+              height: 4.4rem;
+              background-color: #000;
+              border-radius: 50%;
+              text-align: center;
+      
+              img{
+                  width: 1.8rem;
+                  height: 1.8rem;
+                  margin-top:0.5rem;
+              }
+      
+              p{
+                  margin-top: -0.3rem;
+                  color: #fff;
+              }
+
+              &:nth-child(1){
+                  bottom: 15.4rem;
+                  left: 0;
+              }
+              &:nth-child(2){
+                  bottom: 12.4rem;
+                  left: 30%;
+                  margin-left: -2.2rem;        
+              }
+              &:nth-child(3){
+                  bottom: 7.4rem;
+                  left: 45%;
+                  margin-left: -2.2rem;
+                  
+              }
+              &:nth-child(4){
+                  left: 50%;
+                  margin-left: -2.2rem;
+                  bottom: .5rem;
+              }
+              &:nth-child(5){
+                  left: .5rem;                
+                  bottom: .5rem;
+              }
+          }
+      } 
+  }
